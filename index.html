@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+
+        function validation(){
+            var username= document.getElementById('username').value;
+
+
+            if(username ==""){
+                alert('please enter your username!');
+                return false;
+            }
+            else if(!username.includes('@')){
+                alert('username is not correct!');
+                return false;
+            }
+            else{
+                alert('username is correct!')
+                return true;
+            }
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+<div id="div1">welcome to selam's Login page</div>
+<div class="login-page">
+    <div class="form">
+        <h3>Register</h3>
+        <form class="register-form" action="submission.html" method="post" onsubmit="return validation();">
+            <input type="username" placeholder="username" id="username"/>
+            <input type="password" placeholder="password" id="password"/>
+            <input type="submit" value="login"/>
+
+        </form>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    width: 1000px;
+    height: 1000px;
+    background-color: lightblue;
+    animation-name: color;
+    animation-duration: 4s;
+}
+
+
+@keyframes color {
+    75%   {background-color: white;}
+    25%  {background-color:cadetblue ;}
+    25% {background-color: white;}
+    50% {background-color:cadetblue;}
+}
+h1{
+    text-align: center;
+    margin-top: 250px;
+    margin-left: 350px;
+    text-shadow: 2px 2px 1px #000000;
+    font-size: 40px;
+}
+h3{
+    text-align: center;
+    margin-left: 350px;
+}
